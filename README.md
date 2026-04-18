@@ -6,7 +6,7 @@
 ## Overview
 This is the frontend client for the SEM A/B Test Analyzer, a MarTech dashboard designed to automate the statistical analysis of Google Ads campaigns. 
 
-Marketing teams often spend hours manually calculating Click-Through Rates (CTR), Conversion Rates (CVR), and running statistical significance tests in spreadsheets. This React application allows u[...]  
+Marketing teams often spend hours manually calculating Click-Through Rates (CTR), Conversion Rates (CVR), and running statistical significance tests in spreadsheets. This React application allows users to upload a raw Google Ads CSV export and instantly visualizes the winning ad variation based on a backend Z-Test algorithm.  
 
 ## 🚀 Features
 * **Drag-and-Drop Interface:** Seamlessly accept `.csv` file uploads.
