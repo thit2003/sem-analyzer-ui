@@ -6,7 +6,7 @@
 ## Overview
 This is the frontend client for the SEM A/B Test Analyzer, a MarTech dashboard designed to automate the statistical analysis of Google Ads campaigns. 
 
-Marketing teams often spend hours manually calculating Click-Through Rates (CTR), Conversion Rates (CVR), and running statistical significance tests in spreadsheets. This React application allows users to upload a raw Google Ads CSV export and instantly visualizes the winning ad variation based on a backend Z-Test algorithm.
+Marketing teams often spend hours manually calculating Click-Through Rates (CTR), Conversion Rates (CVR), and running statistical significance tests in spreadsheets. This React application allows u[...]  
 
 ## 🚀 Features
 * **Drag-and-Drop Interface:** Seamlessly accept `.csv` file uploads.
@@ -24,15 +24,19 @@ Marketing teams often spend hours manually calculating Click-Through Rates (CTR)
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/thit2003/sem-analyzer-ui.git](https://github.com/thit2003/sem-analyzer-ui.git)
+   git clone https://github.com/thit2003/sem-analyzer-ui.git
    cd sem-analyzer-ui
-Install dependencies:
+   ```
 
-Bash
-npm install
-Start the development server:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Bash
-npm run dev
-Connect the Backend:
-Ensure the FastAPI backend is running locally on port 8000. By default, this frontend is configured to point to the live deployed API, but you can change the fetch URL in src/App.jsx to http://127.0.0.1:8000/api/analyze for local testing.
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Connect the Backend:**
+   Ensure the FastAPI backend is running locally on port `8000`. By default, this frontend is configured to point to the live deployed API, but you can change the fetch URL in `src/App.jsx` to `http://127.0.0.1:8000[...] **Commit message:** Update README.md with project details.
