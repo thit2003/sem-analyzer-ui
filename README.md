@@ -1,18 +1,38 @@
-# React + Vite
+# 📊 SEM A/B Test Analyzer (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [https://sem-analyzer-ui.vercel.app](https://sem-analyzer-ui.vercel.app)  
+**Backend API Repository:** [https://github.com/thit2003/sem-analyzer-api](https://github.com/thit2003/sem-analyzer-api)
 
-Currently, two official plugins are available:
+## Overview
+This is the frontend client for the SEM A/B Test Analyzer, a MarTech dashboard designed to automate the statistical analysis of Google Ads campaigns. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Marketing teams often spend hours manually calculating Click-Through Rates (CTR), Conversion Rates (CVR), and running statistical significance tests in spreadsheets. This React application allows users to upload a raw Google Ads CSV export and instantly visualizes the winning ad variation based on a backend Z-Test algorithm.
 
-## React Compiler
+## 🚀 Features
+* **Drag-and-Drop Interface:** Seamlessly accept `.csv` file uploads.
+* **Instant Visualization:** Renders interactive bar charts comparing ad performance using Recharts.
+* **Business Logic Display:** Clearly highlights the "Winning Ad" and displays the P-Value, indicating if the results meet the 95% industry standard for statistical significance.
+* **Responsive Design:** Clean, modern UI built for both desktop and data-heavy dashboard views.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 💻 Tech Stack
+* **Framework:** React.js (Bootstrapped with Vite for optimal performance)
+* **Data Visualization:** Recharts
+* **Icons:** Lucide React
+* **Deployment:** Vercel
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ How to Run Locally
 
-## Expanding the ESLint configuration
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/thit2003/sem-analyzer-ui.git](https://github.com/thit2003/sem-analyzer-ui.git)
+   cd sem-analyzer-ui
+Install dependencies:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Bash
+npm install
+Start the development server:
+
+Bash
+npm run dev
+Connect the Backend:
+Ensure the FastAPI backend is running locally on port 8000. By default, this frontend is configured to point to the live deployed API, but you can change the fetch URL in src/App.jsx to http://127.0.0.1:8000/api/analyze for local testing.
