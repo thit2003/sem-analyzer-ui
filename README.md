@@ -14,6 +14,14 @@ Marketing teams often spend hours manually calculating Click-Through Rates (CTR)
 * **Business Logic Display:** Clearly highlights the "Winning Ad" and displays the P-Value, indicating if the results meet the 95% industry standard for statistical significance.
 * **Responsive Design:** Clean, modern UI built for both desktop and data-heavy dashboard views.
 
+## Sample Data
+To quickly try the live demo, upload one of the sample CSV files in `mock_csv/`.  
+If you’d like to generate a custom dataset, run `mock_csv/generate_mock_data.py` and adjust parameters such as the output filename and the number of days.
+
+```bash
+python mock_csv/generate_mock_data.py
+```
+
 ## 💻 Tech Stack
 * **Framework:** React.js (Bootstrapped with Vite for optimal performance)
 * **Data Visualization:** Recharts
@@ -39,4 +47,4 @@ Marketing teams often spend hours manually calculating Click-Through Rates (CTR)
    ```
 
 4. **Connect the Backend:**
-   Ensure the FastAPI backend is running locally on port `8000`. By default, this frontend is configured to point to the live deployed API, but you can change the fetch URL in `src/App.jsx` to `http://127.0.0.1:8000[...] **Commit message:** Update README.md with project details.
+   Ensure the FastAPI backend is running locally on port `8000`. By default, this frontend is configured to point to the live deployed API, but you can change the fetch URL in `src/App.jsx` to `http://127.0.0.1:8000[...]
